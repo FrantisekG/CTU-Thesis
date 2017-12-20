@@ -5,13 +5,17 @@
 
 import time
 import sys
+import datetime
 
-def main(argv):
-    period = 10 
+from poloniex import Poloniex
+
+polo = poloniex.Poloniex('Public key','Secret key')
+balance = polo('returnBalances')
+print("I have %s BTC!" % balance['BTC'])
+
+#def main(argv):
+#    period = 10 
     
-    while True:
-        print "period"
-        time.sleep(period) #Suspend execution of the current thread for the given number of seconds.
+
         
-if Cryptobot
 
