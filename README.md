@@ -1,2 +1,2 @@
-# CryptoBot
-Creating an intelligent agent for analysing a crypto currency
+# Bot for Cryptocurrency market
+Applying well based algorithms used in the traditional trading markets on the cryptocurrency market.
