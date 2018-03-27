@@ -1,3 +1,7 @@
 Algorithmic trading:
  - main use of technical analysis, which tries to predict future events based on historical data (when to enter or exit position)
- 
+
+Selecting Columns
+using a dot notation, e.g. data.column_name,
+using square braces and the name of the column as a string, e.g. data['column_name']
+or using numeric indexing and the iloc selector data.iloc[:, <column_number>]
