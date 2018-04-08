@@ -1,0 +1,22 @@
+- Vymýšlet zpùsoby, jak v historických datech oznaèit místa pro nákup a prodej
+-- Týdenní intervaly, prodej, nákup, na základì indikací, minima a maxima
+-- Algoritmy budou nebo nebudou odpovídat tomu, jak pracují lidi
+-- Plovoucí okno a hledat nejvzádelenìjší body od sebe, hledat rozdíly 
+-- Filtrace mediálním filtrem, hladká køivka, minimum a maximum, problematické
+-- Hledání metody, které budou oznaèovat místa pro nakup/prodej podle rùzných kritérii
+-- Zjistit, jaké algoritmy lze použít na tohle, nejpodobnìjší výsledky
+-- Hledání algoritmy na minima a maxima ve statistice i v jiných oborech ve složitých    èasových øadách
+
+ 
+
+https://www.quora.com/Algorithmic-trading-How-to-get-started-building-an-algorithmic-trading-system
+
+https://www.quora.com/How-difficult-is-it-for-a-motivated-scientist-well-versed-in-programming-probability-statistics-to-build-an-automated-trading-system-from-home-How-difficult-is-it-to-compete-with-the-full-time-professional-traders/answer/Denis-Bykov
+
+Autoregressive integrated moving average
+
+SCHÙZKA: 6.4
+5-10 funkce z technické analýzy
+
+
+
