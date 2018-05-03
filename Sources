@@ -5,19 +5,23 @@ https://www.edx.org/course/data-structures-fundamentals-uc-san-diegox-algs201x
 https://courses.csail.mit.edu/6.006/fall11/notes.shtml
 3) Databases
 https://www.coursera.org/learn/python-databases
-4) 
-
-
-
-
-
-
+############################################################################################################################################
+Internet sources:
+- Blog featuring an introduction into RNN's
+http://www.wildml.com/
+- Time series overview from standpoint of prediction
+https://en.wikipedia.org/wiki/Time_series
+- Applied ML in Python, lectures
+https://www.coursera.org/learn/python-machine-learning
+- Several Medium blogs on price predictions
+https://hackernoon.com/dont-be-fooled-deceptive-cryptocurrency-price-predictions-using-deep-learning-bf27e4837151
+https://towardsdatascience.com/stock-prediction-in-python-b66555171a2
+https://dashee87.github.io/deep%20learning/python/predicting-cryptocurrency-prices-with-deep-learning/
+https://medium.com/@siavash_37715/how-to-predict-bitcoin-and-ethereum-price-with-rnn-lstm-in-keras-a6d8ee8a5109
 
 https://www.youtube.com/watch?v=TOeXpCHtrxk
 
 https://www.kaggle.com/myonin/bitcoin-price-prediction-by-arima
-
-DOes Jupyter Kernel save in a memory previous registers
 
 https://www.quantopian.com/tutorials/getting-started#lesson2
 https://github.com/OscarAlsingCommunity/Predict-Cryptocurrency-Price-With-Machine-Learning/blob/master/main.ipynb
