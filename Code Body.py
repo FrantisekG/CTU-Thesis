@@ -116,6 +116,7 @@ for pair in pairs:
 main_df["Future"]=main_df[f"{Predicted_Pair}_Close"].shift(-Future_Time_Predict)
 main_df["Target"]=list(map(classify, main_df[f"{Predicted_Pair}_Close"],main_df["Future"]))
 #####################################################################
+# PREPROCESS DATA + PRINT OF VALIDATED DATA
 times = sorted(main_df.index.values)  # we need to sort the validation samples. 
 last_5pct = sorted(main_df.index.values)[-int(0.05*len(times))] #last 5% of time
 
