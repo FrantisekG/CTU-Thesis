@@ -12,7 +12,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM, CuDNNL
 from tensorflow.keras.callbacks import TensorBoard
 from tensorflow.kerar.callbacks import ModelCheckpoint
-
+# Tensorflow currently not working accordingly
+#####################################################################
 #additional modfication of plots using seaborng
 plt.style.use('seaborn-notebook') 
 #####################################################################
@@ -23,7 +24,8 @@ df = pd.read_csv(path, names=['Time', 'Low', 'High', 'Open', 'Close', 'Volume'])
 Seq_Length= 60 #the last 60 minutes of pricing data for prediction
 Future_Time_Predict= 3 #how many minutes/hours into the future do we predict // functions like slicing
 Predicted_Pair="LTC-USD"
-
+#####################################################################
+# SIMPLE FUNCTION TO DECIDE WHEATHER TO BUY OR SELL
 
 def classify (current_price, future_price):
     if float(future_price) > float(current_price): #if future price in training data is greater than current return an int 1
@@ -31,7 +33,7 @@ def classify (current_price, future_price):
     else:
         return 0 #sell
 
-# BALANCING DATA
+# BALANCING THE DATASET TO FIT OUR PREDICTION MODEL
 
 def preprocess_df(df):
     df = df.drop("Future", 1) # leave out the future calm from the learning process
@@ -82,9 +84,8 @@ def preprocess_df(df):
     
     return np.array(X), y
 
-
-##############################################################################################################
-#DATAFRAME#
+#####################################################################
+#CREATE AN EMPTY DATAFRAME FOR FURTHER HANDLING#
 
 main_df = pd.DataFrame() # begin empty dataframe, in order to merge dataframes
 pairs = ["BTC-USD", "LTC-USD", "BCH-USD", "ETH-USD"] #strings of used Cryptos
@@ -110,10 +111,11 @@ for pair in pairs:
     else:
         main_df=main_df.join(df)
     
-##############################################################################################################
+#####################################################################
+# FUTURE AND TARGET COLUMN, PRINT FOR CONTROL
 main_df["Future"]=main_df[f"{Predicted_Pair}_Close"].shift(-Future_Time_Predict)
 main_df["Target"]=list(map(classify, main_df[f"{Predicted_Pair}_Close"],main_df["Future"]))
-  
+#####################################################################
 times = sorted(main_df.index.values)  # we need to sort the validation samples. 
 last_5pct = sorted(main_df.index.values)[-int(0.05*len(times))] #last 5% of time
 
@@ -128,8 +130,3 @@ print(f"Dont buys: {train_y.count(0)}, Buys: {train_y.count(1)}")
 print(f"VALIDATION Dont buys: {validation_y.count(0)}, Buys: {validation_y.count(1)}")
 
 ##############################################################################################################
-
-model = Sequential()
-model.add(CuDNNLSTM(128, input_shape=(train_x.shape[1:]), return_sequences=True))
-model.add(Dropout(0.2))
-model.add(BatchNormalization())
