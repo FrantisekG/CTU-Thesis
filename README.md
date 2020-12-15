@@ -1,6 +1,6 @@
 # Application of Machine Learning to Predict Price Development of Cryptocurrencies
 
-This repository contains the final version of my <a href="">thesis</a>. Defended on June 27, 2019.
+This repository contains the final version of my <a href="https://github.com/FrantisekG/CTU-Thesis/blob/master/Thesis_Final.pdf">thesis</a>. Defended on June 27, 2019.
 
 ---
 
